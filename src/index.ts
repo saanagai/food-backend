@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const port = process.env.PORT;
-app.use("/food-category", categoryRoute)
+app.use("/food-category", categoryRoute);
 
 app.get("/", (req, res) => {
   res.send("hello foodDelivery");
